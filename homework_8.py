@@ -1,3 +1,4 @@
+
 # Формирование списка:
 lst = []
 for i in range(200):
@@ -5,6 +6,8 @@ for i in range(200):
     random_number = random.randint(1, 10)
     lst.append(random_number)
 print('Список рандом 200', lst)
+
+
 # Функция сортировки списка:
 def sort():
     for el in lst:
@@ -13,6 +16,7 @@ def sort():
         else:
             rez[el] = 1
 
+            
 rez = {}
 sort()
 print('Словарь - результат', rez)
