@@ -15,7 +15,7 @@ def enter():
             if i in list1:
                 new_n_name = '.'
                 list1 = [a if a != i else new_n_name for a in list1]
-                if list1.count('.') > 1:
+                if list1.count('.') > 1 or list1.count('-') > 1:
                     print('Вы ввели не корректное число:', input_value)
                     break
                 db = ''.join(list1)
@@ -38,7 +38,7 @@ def enter():
             if i in list1:
                 new_n_name = '.'
                 list1 = [a if a != i else new_n_name for a in list1]
-                if list1.count('.') > 1:
+                if list1.count('.') > 1 or list1.count('-') > 1:
                     print('Вы ввели не корректное число:', input_value)
                     break
                 db = ''.join(list1)
