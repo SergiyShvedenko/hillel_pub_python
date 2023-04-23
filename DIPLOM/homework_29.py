@@ -12,6 +12,7 @@ def skl(w, lst):
     return lst[0] if f1(w) else lst[1] if f2(w) else lst[2]
 
 
+# поиск и отображение информации
 def search_inf():
     wb = xl.load_workbook('hw_29.xlsx', read_only=True)
     sheet = wb.active
@@ -76,7 +77,8 @@ def search_inf():
                       person_4, person_5, person_6, '.', person_7, sep='')
 
 
-def vhod():
+# ввод и верификация
+def vhod() :
     wb = openpyxl.load_workbook('hw_29.xlsx')
     sheet = wb.active
     while True:
